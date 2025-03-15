@@ -8,32 +8,46 @@ Bu CRM sistemi, müşteri destek taleplerini şehir bazında en uygun temsilciye
 Müşteri Destek Yönlendirme
 
 Müşterinin bulunduğu şehirdeki temsilciler filtrelenir.
+
 Temsilciler uygunluk skorlarına göre sıralanır.
+
 Talebi karşılayan en uygun temsilci seçilir.
 
 Pazarlama Optimizasyonu
 
 0/1 Knapsack Problemi çözümü için dinamik programlama yöntemi kullanılır.
+
 Kampanya maliyet ve getirilerine göre en iyi seçim yapılır.
 
 # Algoritma Karmaşıklık Analizi
+
 1. Müşteri Destek Yönlendirme
-2. 
+
 T(n) ve O(n) Hesapları:
 
 Müşteri sayısı: M, Temsilci sayısı: N
+
 Şehir bazında temsilci filtreleme → O(N)
+
 Temsilcileri uygunluk skoruna göre sıralama → O(N log N)
+
 En uygun temsilciyi seçme → O(N)
+
 Temsilci listesinden çıkarma → O(N)
+
 🔹 Toplam karmaşıklık: O(MN log N)
 
 2. Pazarlama Optimizasyonu
+
 T(n) ve O(n) Hesapları:
 
 Kampanya sayısı: n, Bütçe: B
+
 DP tablosu oluşturma → O(nB)
+
 Maksimum getiri hesaplama (Dinamik Programlama) → O(nB)
+
 Seçilen kampanyaları belirleme → O(n)
+
 🔹 Toplam karmaşıklık: O(nB)
 
